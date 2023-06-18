@@ -1,14 +1,14 @@
 import React from "react";
-import MainSection from "../assets/images/main-section.png";
+import BannerImage from "../assets/images/banner-img.png";
 import ThinkingEmoji from "../assets/images/thinking-emoji.png";
 
 const Main = () => {
   return (
     <div>
       <div
-        className={`bg-[url${MainSection}] h-screen pt-44 md:pt-32`}
+        className={`h-screen sm:h-[60vh] pt-44 md:pt-32 relative`}
         style={{
-          background: `url(${MainSection})`,
+          background: `url(${BannerImage})`,
           backgroundSize: "cover",
           backgroundPositionX: "center",
           backgroundPositionY: "center",
@@ -22,7 +22,7 @@ const Main = () => {
             PORSLIN • RETRO • MODELLBILAR
           </p>
         </div>
-        <div className="px-20 md:px-0 absolute z-10 bottom-0 md:-bottom-16 xs:-bottom-32 w-full ">
+        <div className="px-20 md:px-0 absolute z-10 bottom-0 md:-bottom-16 sm:bottom-0 xs:-bottom-32 w-full ">
           <div className="flex flex-wrap gap-y-2 xs:gap-y-4 bg-[#212549] text-white px-7 md:px-4 py-3">
             <div className="w-3/12 md:w-6/12 xs:w-full flex items-center gap-3">
               <img className="w-7" src={ThinkingEmoji} alt="" />
